@@ -1,0 +1,41 @@
+@media(min-width: 32.5em){
+    .main .header{
+        flex-direction: row;
+        align-items: flex-start;
+        height: 4.6em;
+    }
+    
+    .main .header h1{
+        order: 1;
+        font-size: 3.2em;
+        margin-left: 1.8em;
+    }
+    
+    .main .header img{
+        order: 2;
+        margin-right: 1em;
+    }
+
+    .main .container h2{
+        font-size: 1.4em;
+    }
+
+    .main .footer p{
+        font-size: .8em;
+    }
+}
+
+@media(min-width: 700px){
+    .main{
+        width: 700px;
+        margin: 1em auto;
+    }
+
+    .main .header h1{
+        margin-left: 4em;
+    }
+
+    .main .container hr{
+        width: 190%;
+    }
+}
