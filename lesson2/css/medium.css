@@ -1,0 +1,9 @@
+@media(min-width: 32.5em){
+    #container section{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #container section .companies figure figcaption{
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,14 @@
+@media(min-width: 60em){
+    #container header{
+        max-width: 80em;
+    }
+
+    #container section{
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 80em;
+    }
+
+    #container footer p{
+        font-size: 1em;
+    }
+}

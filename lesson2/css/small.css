@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: rgb(35, 35, 35);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container header{
+    text-align: center;
+    background-color: rgb(0, 90, 0);
+    margin-bottom: .5em;
+    width: 100%;
+}
+
+#container header h1{
+    margin-bottom: 0;
+    font-size: 1.8em;
+}
+
+#container header h2{
+    margin-bottom: .6em;
+    font-size: 1.5em;
+}
+
+#container section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .6em;
+    padding: .4em;
+}
+
+#container section .companies{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: .4em;
+    background-color: rgb(230, 230, 230);
+}
+
+#container section .companies h3{
+    color: rgb(0, 90, 0);
+    font-size: 1.2em;
+    padding: .3em;
+}
+
+#container section .companies p,
+#container section .companies a{
+    padding-left: .4em;
+    font-size: .9em;
+}
+
+#container section .companies a{
+    color: rgb(0, 0, 0);
+    margin-bottom: .6em;
+}
+
+#container section .companies figure{
+    width: 100%;
+    padding: .4em;
+    margin: 0;
+}
+
+#container section .companies figure figcaption{
+    font-size: .9em;
+}
+
+#container section .companies figure .img{
+    width: 100%;
+}
+
+#container footer p{
+    font-size: .8em;
+    margin-top: 1em;
+}
