@@ -27,6 +27,11 @@
     main .container .content-box p{
         font-size: .9em;
     }
+
+    .content-box figure img,
+    footer figure img{
+        width: 43em;
+    }
 }
 
 @media(min-width: 75em){

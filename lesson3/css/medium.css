@@ -8,4 +8,9 @@
         float: left;
         width: 20%;
     }
+
+    .content-box figure img,
+    footer figure img{
+        margin: 0 auto;
+    }
 }
