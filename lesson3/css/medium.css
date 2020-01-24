@@ -1,0 +1,11 @@
+@media(min-width: 32.5em){
+    header nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li{
+        float: left;
+        width: 20%;
+    }
+}

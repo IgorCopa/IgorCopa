@@ -1,0 +1,37 @@
+@media(min-width: 52em){
+
+    main header .top-container img{
+        height: 70px;
+    }
+
+    header .top-container .headings-box h1{
+        font-size: 1.6em;
+    }
+
+    header .top-container .headings-box h2{
+        font-size: 1.2em;
+    }
+
+    main .container .content-box h3{
+        font-size: 1.1em;
+    }
+
+    h4{
+        font-size: .95em;
+    }
+
+    nav ul li a{
+        font-size: .9em;
+    }
+
+    main .container .content-box p{
+        font-size: .9em;
+    }
+}
+
+@media(min-width: 75em){
+    main{
+        width: 75em;
+        margin: 0 auto;
+    }
+}
