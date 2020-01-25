@@ -9,6 +9,15 @@
         width: 20%;
     }
 
+    nav ul .liDrop .ulDrop{
+        position: absolute;
+        width: 20%;
+    }
+
+    nav ul .liDrop .ulDrop li{
+        width: 100%;
+    }
+
     .content-box figure img,
     footer figure img{
         margin: 0 auto;

@@ -39,4 +39,12 @@
         width: 75em;
         margin: 0 auto;
     }
+
+    nav ul .liDrop .ulDrop{
+        width: 15em;
+    }
+
+    nav ul .liDrop .ulDrop li{
+        width: 100%;
+    }
 }

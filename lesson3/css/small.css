@@ -72,13 +72,16 @@ nav ul li.active a{
     color: rgb(55, 55, 55);
 }
 
-nav ul li ul li{
+nav ul .liDrop .ulDrop{
     display: none;
+    background-color: rgb(70, 181, 224);
 }
 
-/* ul li:hover ul li{  DROPDOWN MENU IS NOT WORKING / DONT'T KNOW WHY / SEE LATER
-    display: block;
-} */
+ul .liDrop:hover .ulDrop{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
 
 .clearfix:after{
     content: '';
