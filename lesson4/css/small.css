@@ -188,10 +188,13 @@ footer .bottom-box{
     margin: 10px 0;
 }
 
-footer .bottom-box a,
 footer .bottom-box p{
     display: block;
     text-align: center;
     font-size: .8em;
     color: rgb(215, 215, 215);
+}
+
+footer .bottom-box span{
+    font-size: .93em;
 }
