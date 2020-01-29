@@ -12,10 +12,6 @@ body{
     color: rgb(55, 55, 55);
 }
 
-.container{
-    background-color: rgb(242, 242, 242);
-}
-
 .container, header{
     display: flex;
     flex-direction: column;
@@ -50,6 +46,7 @@ header .top-container .headings-box h2{
 
 .container header nav{
     background-color: rgb(70, 181, 224);
+    width: 100%;
 }
 
 .container header nav #toggleButton{
@@ -101,6 +98,7 @@ nav ul li a:hover{
 .container main{
     display: flex;
     flex-direction: column;
+    background-color: rgb(242, 242, 242);
 }
 
 .container main .content-box{
