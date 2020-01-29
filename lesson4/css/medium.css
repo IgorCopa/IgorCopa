@@ -21,6 +21,10 @@
         border-right: 1px solid rgba(0, 0, 115, .3);
     }
 
+    main .content-box figcaption{
+        font-size: .8em;
+    }
+
     main .content-box .content-box-article{
         flex-direction: row;
         justify-content: space-between;
