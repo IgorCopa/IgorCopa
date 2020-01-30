@@ -31,13 +31,17 @@
 
 @media(min-width: 75em){
 
-    header .top-container, .container main{
+    .container header{
+        background-color: rgb(0, 0, 115);
+    }
+
+    header .top-container,
+    .container main{
         max-width: 75em;
         margin: 0 auto;
     }
 
     .container header nav{
-        width: 100%;
         margin: 0 auto;
     }
 
