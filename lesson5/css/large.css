@@ -16,6 +16,10 @@
         font-size: 1.1em;
     }
 
+    main .content-box .inside-box h3{
+        font-size: .9rem;
+    }
+
     h4{
         font-size: .95em;
     }
@@ -26,10 +30,6 @@
 
     .container main .content-box p{
         font-size: .9em;
-    }
-
-    main .content-box .content-box-contact iframe{
-        width: 55%;
     }
 }
 
