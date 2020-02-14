@@ -21,7 +21,7 @@ body{
     z-index: 1;
 }
 
-.container .banner p{
+.container .banner h5{
     color: rgb(70, 181, 224);
     text-align: center;
 }
