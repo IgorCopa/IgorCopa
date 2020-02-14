@@ -222,6 +222,14 @@ main .content-box .content-box-article{
     flex-direction: column;
 }
 
+main .content-box .content-box-article figure{
+    width: 100%;
+}
+
+.content-box .content-box-article figure img{
+    width: 100%;
+}
+
 main .content-box .content-box-contact{
     display: flex;
     justify-content: space-between;
@@ -249,16 +257,16 @@ main .content-box .inside-box p{
     font-size: 1em;
 }
 
-main .content-box .content-box-contact figure{
+iframe{
     display: none;
-    margin: .5rem 0 0 1rem;
-    width: 55%;
-    border: none;
-    outline: none;
+    border: 0;
+    width: 48%;
+    height: 300px;
+    margin-left: 1rem;
 }
 
-.content-box .content-box-contact figure img{
-    width: 100%;
+main .content-box .content-box-contact .inside{
+    display: flex;
 }
 
 footer{

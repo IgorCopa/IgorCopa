@@ -52,7 +52,7 @@
         justify-content: space-between;
     }
 
-    main .content-box .content-box-contact figure{
+    iframe{
         display: block;
     }
 

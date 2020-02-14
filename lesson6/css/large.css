@@ -12,12 +12,27 @@
         margin: 1rem auto;
     }
 
-    .container main .content-box h3{
+    .container main .content-box h2{
         font-size: 1.1em;
     }
 
+    .container main .content-box .content-box-article{
+        font-size: 1rem;
+    }
+
+    .container main .content-box .content-box-contact{
+        font-size: 1rem;
+        justify-content: flex-start;
+    }
+
+    main .content-box .content-box-contact .inside{
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 2rem;
+    }
+
     main .content-box .inside-box h3{
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     h4{
