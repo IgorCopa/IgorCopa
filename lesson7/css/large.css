@@ -1,0 +1,75 @@
+@media(min-width: 52em){
+
+    header .top-container .headings-box h1{
+        font-size: 2.4em;
+    }
+
+    header .top-container .headings-box h2{
+        font-size: 1.6em;
+    }
+
+    main .forecast .weekdays{
+        margin: 1rem auto;
+    }
+
+    .container main .content-box h2{
+        font-size: 1.1em;
+    }
+
+    .container main .content-box .content-box-article{
+        font-size: 1rem;
+    }
+
+    .container main .content-box .content-box-contact{
+        font-size: 1rem;
+        justify-content: flex-start;
+    }
+
+    main .content-box .content-box-contact .inside{
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 2rem;
+    }
+
+    main .content-box .inside-box h3{
+        font-size: 1rem;
+    }
+
+    h4{
+        font-size: .95em;
+    }
+
+    nav ul li a{
+        font-size: .9em;
+    }
+
+    .container main .content-box p{
+        font-size: .9em;
+    }
+}
+
+@media(min-width: 75em){
+
+    .container header{
+        background-color: rgb(0, 0, 115);
+    }
+
+    header .top-container,
+    .container main{
+        max-width: 75em;
+        margin: 0 auto;
+    }
+
+    .container header nav{
+        margin: 0 auto;
+    }
+
+    header nav ul{
+        width: 75em;
+        margin: 0 auto;
+    }
+
+    nav ul li:first-child{
+        border-left: 1px solid rgba(0, 0, 115, .3);
+    }
+}
