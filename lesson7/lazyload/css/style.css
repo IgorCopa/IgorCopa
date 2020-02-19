@@ -18,9 +18,9 @@ main section h1{
     font-size: 1.4rem;
 }
 
-section picture [data-src] {
+section picture img[data-src] {
     filter: blur(.8em);
-  }
+}
 
 section picture img {
     filter: blur(0em);

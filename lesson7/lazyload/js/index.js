@@ -14,7 +14,7 @@ function preloadImage(img){
 
 const imgOptions ={
   threShold: 0,
-  rootMargin: "0px 0px 250px 0px"
+  rootMargin: "0px 0px 10px 0px"
 };
 
 if('IntersectionObserver' in window) {
@@ -37,38 +37,3 @@ if('IntersectionObserver' in window) {
     imgObserver.observe(image);
   });
 }
-/* let imagesLoader = document.querySelectorAll('img[data-src]');
-
-const imgStartLoading ={
-  threshold: 0,
-  rootMargin: "0px, 0px, 50px, 0px"
-};
-
-const loadImages = (img) => {
-  img.setAttribute('src', img.getAttribute('data-src'));
-  img.onload = () => {
-    img.removeAttribute('data-src');
-  };
-};
-
-imagesLoader.forEach((pic) => {
-  loadImages(pic);
-});
-
-if('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver((items, observer) => {
-    items.forEach((item) => {
-      if(item.isIntersecting) {
-        loadImages(item.target);
-        observer.unobserve(item.target);
-      }
-    });
-  }, imgStartLoading);
-  imagesLoader.forEach((img) => {
-    observer.observe(img);
-  });
-} else {
-  imagesLoader.forEach((img) => {
-    loadImages(img);
-  });
-} */
