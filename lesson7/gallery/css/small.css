@@ -200,12 +200,12 @@ main .content-box .grid-gallery figure{
 
 
 main .content-box .grid-gallery figure img[data-src]{
-    filter: blur(.8em);/*  */
+    filter: blur(.6em);
 }
 
 main .content-box .grid-gallery figure img{
-    filter: blur(0em);/*  */
-    transition: filter .7s;/*  */
+    filter: blur(0em);
+    transition: filter .7s;
     width: 100%;
     height: 300px;
 }
