@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+*, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main{
+    width: 100%;
+    margin-top: 50px;
+}
+
+main table{
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px #628ca6;
+}
+
+table, tr, td, th{
+    border: 1px solid rgb(200, 200, 200);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead tr th{
+    padding: .3rem 0;
+    font-size: 1rem;
+    background-color: #628ca6;
+    color: #fff;
+}
+
+thead tr #title-h1{
+    padding: .5rem;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    background-color: #7fb9c2;
+    color: #000;
+}
+
+tbody tr td{
+    padding: .4rem 0;
+    font-size: 1rem;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(even){
+    background-color: #e7ffed;
+}
+
+
+tfoot tr{
+    background-color: #7fb9c2;
+}
+
+tfoot tr td{
+    padding: .5rem 1.5rem;
+    font-size: .8rem;
+}
