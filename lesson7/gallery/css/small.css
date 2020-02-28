@@ -282,6 +282,86 @@ main .content-box .inside-box p{
     margin: 0 1rem;
 }
 
+main .content-box form{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-box form fieldset{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 1rem;
+    background-color: rgb(230, 230, 230);
+    border-color: rgb(70, 181, 224);
+}
+
+.content-box form fieldset .labelForm{
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0 0 1rem;
+}
+
+.labelForm .radios{
+    display: flex;
+    align-items: center;
+}
+
+.labelForm .radios input{
+    margin-left: 1rem;
+}
+
+.labelForm input{
+    height: 25px;
+    border: 1.3px solid rgba(0, 0, 155, .6);
+    border-top: none;
+    border-left: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.labelForm #personalComment{
+    outline: none;
+    border: 1.3px solid rgba(0, 0, 155, .6);
+    background-color: rgba(242, 242, 242);
+}
+
+.labelForm #button{
+    border-top: 1.3px solid rgba(0, 0, 155, .6);
+    border-left: 1.3px solid rgba(0, 0, 155, .6);
+    cursor: pointer;
+}
+
+.labelForm input:focus{
+    background-color: rgba(70, 181, 224, .3);
+}
+
+.labelForm .inputs,
+.labelForm .ticks{
+    width: 60%;
+}
+
+.ticks .inputs {
+    width: 100%;
+    color: rgba(0, 0, 155, .6);
+}
+
+.ticks{
+    color: rgba(0, 0, 155, .6);
+}
+
+.labelForm .ticks{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.labelForm .ticks #marks{
+    margin-left: 1.5rem;
+}
+
+.labelForm #button{
+    padding: 2px 1rem;
+}
+
 .container main .content-box p{
     text-align: left;
     font-size: .8em;

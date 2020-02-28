@@ -47,6 +47,10 @@
         font-size: .8em;
     }
 
+    .labelForm input{
+        height: 30px;
+    }
+
     main .content-box .content-box-contact{
         display: flex;
         justify-content: space-between;

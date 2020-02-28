@@ -23,18 +23,18 @@ table, tr, td, th{
 }
 
 thead tr th{
-    padding: .3rem 0;
-    font-size: 1rem;
-    background-color: #628ca6;
-    color: #fff;
-}
-
-thead tr #title-h1{
     padding: .5rem;
     font-weight: bolder;
     font-size: 1.4rem;
     background-color: #7fb9c2;
     color: #000;
+}
+
+tbody tr th{
+    padding: .3rem 0;
+    font-size: 1rem;
+    background-color: #628ca6;
+    color: #fff;
 }
 
 tbody tr td{
@@ -43,11 +43,16 @@ tbody tr td{
 }
 
 tbody tr:nth-child(odd){
-    background-color: #e7f0ed;
+    background-color: #e7ffed;
 }
 
 tbody tr:nth-child(even){
-    background-color: #e7ffed;
+    background-color: #e7f0ed;
+}
+
+tbody tr #november-goal{
+    background-color: #628ca6;
+    color: #fff;
 }
 
 

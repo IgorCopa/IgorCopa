@@ -106,4 +106,8 @@
     nav ul li:first-child{
         border-left: 1px solid rgba(0, 0, 115, .3);
     }
+
+    main .content-box form{
+        width: 75em;
+    }
 }
