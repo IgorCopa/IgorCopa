@@ -69,6 +69,16 @@
         display: block;
     }
 
+    .content-box form fieldset{
+        margin: 0 auto;
+        width: 70%;
+        max-width: 30rem;
+    }
+
+    .content-box form fieldset .labelForm{
+        width: 70%;
+    }
+
     footer .bottom-box p{
         font-size: .8em;
     }

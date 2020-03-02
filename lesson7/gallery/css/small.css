@@ -298,7 +298,8 @@ main .content-box form{
 .content-box form fieldset .labelForm{
     display: flex;
     justify-content: space-between;
-    margin: .5rem 0 0 1rem;
+    margin: .5rem auto;
+    width: 80%;
 }
 
 .labelForm .radios{
@@ -323,6 +324,7 @@ main .content-box form{
     outline: none;
     border: 1.3px solid rgba(0, 0, 155, .6);
     background-color: rgba(242, 242, 242);
+    width: 100%;
 }
 
 .labelForm #button{
