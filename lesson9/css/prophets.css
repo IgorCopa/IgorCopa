@@ -39,8 +39,14 @@ header{
     color: rgb(63, 118, 170);
 }
 
+.cards section p{
+    font-size: .8rem;
+    color: rgb(150, 135, 0);
+}
+
 .cards section img{
     width: 60%;
+    margin-top: .5rem;
 }
 
 footer{
