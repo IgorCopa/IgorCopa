@@ -129,14 +129,13 @@ main .container .content-box strong{
 
 .content-box .towns{
     display: grid;
-    grid-template-columns: repeat(1, minmax(200px, 1fr));
-    grid-template-rows: repeat(3, minmax(350px, 1fr));
     grid-gap: 10px;
     width: 95%;
     margin: 0 auto;
 }
 
 .towns section{
+    display: grid;
     background-color: rgba(0, 0, 115, .8);
     color: rgb(215, 215, 215);
     text-align: center;
@@ -212,4 +211,8 @@ footer .bottom-box p{
     text-align: center;
     font-size: .8em;
     color: rgb(215, 215, 215);
+}
+
+footer .bottom-box p:nth-child(1){
+    margin-top: 10px;
 }

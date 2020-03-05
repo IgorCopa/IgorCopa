@@ -16,7 +16,7 @@ fetch(requestURL)
                 let p2 = document.createElement('p');
                 let p3 = document.createElement('p');
                 let image = document.createElement('img');
-                image.setAttribute('src', `./images/town${i}.jpg`);
+                image.setAttribute('src', `./images/${towns[i].photo}`);
                 image.setAttribute('alt', `${towns[i].name}`);
 
                 h2.textContent = `${towns[i].name}`;

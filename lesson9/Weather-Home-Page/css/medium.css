@@ -27,8 +27,19 @@
     }
 
     .content-box .towns{
-        grid-template-columns: repeat(1, minmax(150px, 1fr));
         max-width: 72em;
+    }
+
+    .towns section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .towns section img{
+        grid-row: 1/6;
+    }
+
+    section:nth-child(odd) img{
+        grid-column: 2/3;
     }
 
     .towns section h2{
@@ -43,17 +54,5 @@
     .content-box figure img,
     footer figure img{
         margin: 0 auto;
-    }
-}
-
-@media(min-width: 32.5em) and (max-width: 52em){
-    .content-box .towns section:nth-child(odd){
-        justify-self: start;
-        width: 50%;
-    }
-
-    .content-box .towns section:nth-child(even){
-        justify-self: end;
-        width: 50%;
     }
 }
