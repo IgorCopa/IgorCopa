@@ -1,0 +1,109 @@
+@media(min-width: 52em){
+
+    header .top-container .headings-box h1{
+        font-size: 2.4em;
+    }
+
+    header .top-container .headings-box h2{
+        font-size: 1.6em;
+    }
+
+    .container main .content-box h2{
+        font-size: 1.1em;
+    }
+
+    .container main .content-box .content-box-article{
+        font-size: 1rem;
+    }
+
+    .container main .content-box .content-box-contact{
+        font-size: 1rem;
+        justify-content: flex-start;
+    }
+
+    main .content-box .content-box-contact .inside{
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 2rem;
+    }
+
+    main .content-box .inside-box h3{
+        font-size: 1rem;
+    }
+
+    main .content-box .grid-gallery{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main .content-box .grid-gallery .fig-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .4);
+        transition: .2s;
+        z-index: 10;
+    }
+
+    main .content-box .grid-gallery .fig-overlay:hover{
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: 0px 5px 10px rgb(40, 40, 40);
+    }
+
+    main .content-box .grid-gallery .fig-overlay h6{
+        position: absolute;
+        font-size: .9em;
+        bottom: 10px;
+        color: rgb(242, 242, 242);
+    }
+
+    main .content-box .grid-gallery .fig-overlay:hover h6{
+        color: rgb(0, 0, 0);
+    }
+
+    main .content-box .grid-gallery figure img{
+        height: 240px;
+    }
+
+    h4{
+        font-size: .95em;
+    }
+
+    nav ul li a{
+        font-size: .9em;
+    }
+
+    .container main .content-box p{
+        font-size: .9em;
+    }
+}
+
+@media(min-width: 75em){
+
+    .container header{
+        background-color: rgb(0, 0, 115);
+    }
+
+    header .top-container,
+    .container main{
+        max-width: 75em;
+        margin: 0 auto;
+    }
+
+    .container header nav{
+        margin: 0 auto;
+    }
+
+    header nav ul{
+        width: 75em;
+        margin: 0 auto;
+    }
+
+    nav ul li:first-child{
+        border-left: 1px solid rgba(0, 0, 115, .3);
+    }
+
+    main .content-box form{
+        width: 75em;
+    }
+}

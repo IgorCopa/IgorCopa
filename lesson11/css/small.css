@@ -1,0 +1,401 @@
+@charset "utf-8";
+
+*, body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    color: rgb(55, 55, 55);
+}
+
+.container .banner{
+    display: none;
+    background-color: rgb(55, 55, 55);
+    padding: 1rem;
+    box-shadow: 10px 0px 10px rgb(70, 181, 224),
+                -10px 0 10px rgb(70, 181, 224);
+    z-index: 1;
+}
+
+.container .banner h5{
+    color: rgb(70, 181, 224);
+    text-align: center;
+}
+
+.container, header{
+    display: flex;
+    flex-direction: column;
+}
+
+.container header .top-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(0, 0, 115);
+}
+
+.container header .top-container img{
+    height: 100px;
+    margin: 0 1rem;
+}
+
+header .top-container .headings-box h1{
+    margin: 0;
+    color: rgb(242, 242, 242);
+    font-size: 2em;
+    font-family: 'Cabin', sans-serif;
+}
+
+header .top-container .headings-box h2{
+    margin: 0;
+    color: rgb(242, 242, 242);
+    font-size: 1.1em;
+    font-family: 'Cabin', sans-serif;
+}
+
+.container header nav{
+    background-color: rgb(70, 181, 224);
+    width: 100%;
+}
+
+.container header nav #toggleButton{
+    display: block;
+    margin: .8rem 1rem;
+    color: rgb(70, 181, 224);
+    background-color: rgb(0, 0, 115);
+    border: none;
+    border-radius: 4px;
+    outline: 0;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+header nav ul.hide{
+    display: none;
+}
+
+header nav ul li{
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li a{
+    display: block;
+    color: rgb(55, 55, 55);
+    text-decoration: none;
+    padding: .8rem 1rem;
+    font-size: .8em;
+    border-top: 1px solid rgba(0, 0, 115, .3);
+}
+
+nav ul li.active a{
+    background-color: rgba(215, 215, 215, .8);
+    color: rgb(55, 55, 55);
+}
+
+nav ul li a:hover{
+    background-color: rgba(215, 215, 215);
+    color: rgb(55, 55, 55);
+}
+
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(242, 242, 242);
+}
+
+.container main .content-box{
+    margin: 1rem 0;
+}
+
+.container main .content-box h1,
+.container main .content-box h2,
+.container main .content-box p{
+    margin: 0 1rem 1rem 1rem;
+}
+
+
+.container main .content-box h1{
+    font-size: 1.2rem
+}
+
+.container main .content-box h2{
+    font-size: 1rem;
+}
+
+main .content-box figure{
+    position: relative;
+    max-width: 75em;
+    margin: 0;
+    padding: 0;
+}
+
+main .content-box figure .overlay{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, .75);
+    margin: .8rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.content-box figure .overlay h2{
+    text-align: center;
+}
+
+.content-box figure .overlay p{
+    margin: .5rem;
+    padding: 0;
+}
+
+.content-box figure .overlay h2,
+.content-box figure .overlay p{
+    color: rgb(255, 255, 255);
+}
+
+main .content-box img{
+    width: 100%;
+}
+
+main .content-box figcaption{
+    text-align: center;
+    font-size: .7em;
+    margin: 0 1rem 1rem 1rem;
+}
+
+main .content-box .grid-gallery{
+    display: grid;
+    max-width: 75em;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+}
+
+main .content-box .grid-gallery .fig-overlay h6{
+    position: absolute;
+    font-size: .9em;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(0, 0, 0);
+}
+
+main .content-box .grid-gallery figure{
+    background-color: rgb(70, 181, 224);
+}
+
+
+main .content-box .grid-gallery figure img[data-src]{
+    filter: blur(.6em);
+}
+
+main .content-box .grid-gallery figure img{
+    filter: blur(0em);
+    transition: filter .7s;
+    width: 100%;
+    height: 300px;
+}
+
+main .content-box .grid-gallery figure figcaption{
+    height: 15px;
+}
+
+main .fore{
+    display: flex;
+    flex-direction: column;
+}
+
+main .content-box .fore h2{
+    margin-left: 1rem;
+}
+
+main .fore .forecast{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+    margin: 1rem 7rem;
+}
+
+main .fore .forecast .weekdays{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #999;
+}
+
+main .content-box .content-box-article{
+    display: flex;
+    flex-direction: column;
+}
+
+main .content-box .content-box-article figure{
+    width: 100%;
+}
+
+.content-box .content-box-article figure img{
+    width: 100%;
+}
+
+main .content-box .content-box-contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .content-box .inside-box h3{
+    font-size: .8rem;
+    margin: .3rem 0 .3rem 1rem;
+}
+
+main .content-box .inside-box p{
+    margin: 0 1rem;
+}
+
+main .content-box form{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-box form fieldset{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 1rem;
+    background-color: rgb(230, 230, 230);
+    border-color: rgb(70, 181, 224);
+}
+
+.content-box form fieldset .labelForm{
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem auto;
+    width: 80%;
+}
+
+.labelForm .radios{
+    display: flex;
+    align-items: center;
+}
+
+.labelForm .radios input{
+    margin-left: 1rem;
+}
+
+.labelForm input{
+    height: 25px;
+    border: 1.3px solid rgba(0, 0, 155, .6);
+    border-top: none;
+    border-left: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.labelForm #personalComment{
+    outline: none;
+    border: 1.3px solid rgba(0, 0, 155, .6);
+    background-color: rgba(242, 242, 242);
+    width: 100%;
+}
+
+.labelForm #button{
+    border-top: 1.3px solid rgba(0, 0, 155, .6);
+    border-left: 1.3px solid rgba(0, 0, 155, .6);
+    cursor: pointer;
+}
+
+.labelForm input:focus{
+    background-color: rgba(70, 181, 224, .3);
+}
+
+.labelForm .inputs,
+.labelForm .ticks{
+    width: 60%;
+}
+
+.ticks .inputs {
+    width: 100%;
+    color: rgba(0, 0, 155, .6);
+}
+
+.ticks{
+    color: rgba(0, 0, 155, .6);
+}
+
+.labelForm .ticks{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.labelForm .ticks #marks{
+    margin-left: 1.5rem;
+}
+
+.labelForm #button{
+    padding: 2px 1rem;
+}
+
+.container main .content-box p{
+    text-align: left;
+    font-size: .8em;
+}
+
+.container main .content-box a{
+    font-size: 1em;
+}
+
+.container main .content-box strong{
+    font-size: 1em;
+}
+
+iframe{
+    display: none;
+    border: 0;
+    width: 48%;
+    height: 300px;
+    margin-left: 1rem;
+}
+
+main .content-box .content-box-contact .inside{
+    display: flex;
+}
+
+footer{
+    background-color: rgb(0, 0, 115);
+    width: 100%;
+}
+
+footer .bottom-box{
+    margin: 10px 0;
+}
+
+footer .bottom-box p{
+    display: block;
+    text-align: center;
+    font-size: .7em;
+    color: rgb(215, 215, 215);
+}
+
+footer .bottom-box span{
+    font-size: 1em;
+}
+
+.clearfix::after{
+    display: table;
+    content: '';
+    clear: both;
+}

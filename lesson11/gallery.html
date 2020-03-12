@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preston City, BYU Idaho, Lesson 4, Igor Oliveira">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico">
+    <title>Gallery Page</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="top-container">
+                <img src="./images/logo.png" alt="Logo">
+                <div class="headings-box">
+                    <h1>WSW</h1>
+                    <h2>What's the Weather Like?</h2>
+                </div>
+            </div>
+            <nav class="clearfix">
+                <button id="toggleButton" class="">&#9776;</button>
+                <ul id="ulDrop" class="hide">
+                    <li><a href="./Weather-Home-Page/index.html">Home</a></li>
+                    <li><a href="./preston.html">Preston</a></li>
+                    <li><a href="./soda-springs.html">Soda Springs</a></li>
+                    <li><a href="./fish-haven.html">Fish Haven</a></li>
+                    <li><a href="./stormcenter.html">Storm Center</a></li>
+                    <li class="active"><a href="./gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="content-box">
+                <h1>Basic Weather Gallery</h1>
+                <div class="grid-gallery">
+                    <figure>
+                        <div class="fig-overlay"><h6>Cloudy Weather</h6></div>
+                        <img src="./images/placeholder.jpg" data-src="./images/cloudy-1.jpg" alt="Windy Weather">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="fig-overlay"><h6>Sunny Weather</h6></div>
+                        <img src="./images/placeholder.jpg" data-src="./images/sunny-2.jpg" alt="Sunny Weather">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="fig-overlay"><h6>Snowy Weather</h6></div>
+                        <img src="./images/placeholder.jpg" data-src="./images/snowy-3.jpg" alt="Snowy Weather">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="fig-overlay"><h6>Sunny Weather</h6></div>
+                        <img src="./images/placeholder.jpg" data-src="./images/sunny-4.jpg" alt="Sunny Weather">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="fig-overlay"><h6>Foggy Weather</h6></div>
+                        <img src="./images/placeholder.jpg" data-src="./images/foggy-5.jpg" alt="Foggy Weather">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="fig-overlay"><h6>Cloudy Weather</h6></div>
+                        <img src="./images/placeholder.jpg" data-src="./images/cloudy-6.jpg" alt="Windy Weather">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="fig-overlay"><h6>Snowy Weather</h6></div>
+                        <img src="./images/placeholder.jpg" data-src="./images/snowy-7.jpg" alt="Snowy Weather">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="fig-overlay"><h6>Rainy Weather</h6></div>
+                        <img src="./images/placeholder.jpg" data-src="./images/rainy-8.jpg" alt="Rainy Weather">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="fig-overlay"><h6>Rainy Weather</h6></div>
+                        <img src="./images/placeholder.jpg" data-src="./images/rainy-9.jpg" alt="Rainy Weather">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="fig-overlay"><h6>Sunny Weather</h6></div>
+                        <img src="./images/placeholder.jpg" data-src="./images/sunny-10.jpg" alt="Sunny Weather">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="fig-overlay"><h6>Snowy Weather</h6></div>
+                        <img src="./images/placeholder.jpg" data-src="./images/snowy-11.jpg" alt="Snowy Weather">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="fig-overlay"><h6>Snowy Weather</h6></div>
+                        <img src="./images/placeholder.jpg" data-src="./images/snowy-12.jpg" alt="Snowy Weather">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="bottom-box">
+                <p>&copy; 2020 | Igor H. Oliveira | <span id="currentDate"></span></p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="./js/windchill.js"></script>
+    <script src="./js/lazyload.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
