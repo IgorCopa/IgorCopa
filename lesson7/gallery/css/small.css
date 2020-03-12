@@ -214,45 +214,27 @@ main .content-box .grid-gallery figure figcaption{
     height: 15px;
 }
 
-main .forecast{
-    display: none;
-}
-
-main .forecast .weekdays{
+main .fore{
     display: flex;
+    flex-direction: column;
     margin: 1rem;
-    justify-content: space-around;
-    max-width: 50em;
-    border-top: 1px solid rgb(215, 215, 215);
-    border-right: 1px solid rgb(215, 215, 215);
 }
 
-main .forecast .weekdays .day{
+main .fore .forecast{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+    background-color: #777;
+}
+
+main .fore .forecast .weekdays{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    border-left: 1px solid rgb(215, 215, 215);
-    border-bottom: 1px solid rgb(215, 215, 215);
-    background-color: white;
-}
-
-.forecast .weekdays .day .weekday{
-    margin-top: 1rem;
-}
-
-.forecast .weekdays .day .weather{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.weekdays .day .weather img{
-    width: 50%;
-}
-
-.weekdays .day .weather p{
-    font-size: .7em;
+    padding: 10px;
+    background-color: #999;
 }
 
 main .content-box .content-box-article{

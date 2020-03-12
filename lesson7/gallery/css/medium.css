@@ -25,9 +25,9 @@
         font-size: .8em;
     }
 
-    main .forecast{
-        display: flex;
-        flex-direction: column;
+    main .fore .forecast{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 150px;
     }
 
     main .content-box .content-box-article{
