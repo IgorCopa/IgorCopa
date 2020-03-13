@@ -1,4 +1,33 @@
-const myDate = new Date();
+const urlAPI = '//api.openweathermap.org/data/2.5/weather?id=560791&APPID=76579bd6f115642f3c77a641d14ce74c&units=imperial';
+
+fetch(urlAPI)
+  .then((response) => response.json())
+  .then((myJsonInfo) => {
+
+    console.log(myJsonInfo);
+
+    let currentWeather = document.querySelector('#current-weather');
+    const t = document.querySelector('#high-temperature');
+    let humidity = document.querySelector('#humidity');
+    const s = document.querySelector('#wind-speed');
+    let windChill = document.querySelector('#wind-chill');
+
+    t.innerHTML = myJsonInfo.main.temp_max;
+    s.innerHTML = myJsonInfo.wind.speed;
+    currentWeather.innerHTML = myJsonInfo.weather[0].main;
+    humidity.innerHTML = myJsonInfo.main.humidity;
+    
+    let f = 35.74 + (0.6215*t.innerHTML) - 35.75*Math.pow(s.innerHTML, 0.16) + (0.4275*t.innerHTML*Math.pow(s.innerHTML, 0.16));
+
+    if(s.innerHTML > 3 && t.innerHTML <= 50){
+        windChill.innerHTML = f.toFixed(1);
+    } else {
+        windChill.innerHTML = 'N/A';
+    }
+
+  });
+
+  const myDate = new Date();
 const todayNumber = myDate.getDay();
 const weekDays = new Array(7);
 weekDays[0] = 'Sunday';
@@ -9,7 +38,7 @@ weekDays[4] = 'Thursday';
 weekDays[5] = 'Friday';
 weekDays[6] = 'Saturday';
 
-const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=76579bd6f115642f3c77a641d14ce74c&units=imperial";
+const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=560791&APPID=76579bd6f115642f3c77a641d14ce74c&units=imperial";
 fetch(apiURL)
   .then((response) => response.json())
   .then((myJsInfo) => {
