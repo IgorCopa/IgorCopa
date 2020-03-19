@@ -34,6 +34,7 @@
     main .content-box .content-box-article{
         flex-direction: row;
         justify-content: space-between;
+        width: 100%;
     }
 
     .content-box .towns{
