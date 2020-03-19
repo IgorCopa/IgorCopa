@@ -130,6 +130,44 @@ nav ul li a:hover{
     font-size: 1.2rem
 }
 
+.content-box .towns{
+    display: grid;
+    grid-gap: 10px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.content-box h3{
+    margin-left: 1rem;
+    font-size: 1.4rem;
+}
+
+.towns section{
+    display: grid;
+    background-color: rgba(0, 0, 115, .8);
+    color: rgb(215, 215, 215);
+    text-align: center;
+}
+
+.towns section h2{
+    font-size: 1.2rem !important;
+    margin: .5em 0 .5em 0 !important;
+}
+
+.towns section h3{
+    font-size: .9rem;
+    margin-bottom: .5em;
+}
+
+.towns section p{
+    font-size: .9rem;
+    text-align: center !important;
+}
+
+.towns section img{
+    width: 100%;
+}
+
 .container main .content-box h2{
     font-size: 1rem;
 }

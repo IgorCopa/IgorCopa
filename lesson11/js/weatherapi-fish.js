@@ -27,7 +27,7 @@ fetch(urlAPI)
 
   });
 
-  const myDate = new Date();
+const myDate = new Date();
 const todayNumber = myDate.getDay();
 const weekDays = new Array(7);
 weekDays[0] = 'Sunday';
@@ -62,6 +62,8 @@ fetch(apiURL)
         let iconCode = myJsInfo.list[i].weather[0].icon;
         let iconPath = `//openweathermap.org/img/w/${iconCode}.png`;
         let myIcon = document.createElement('img');
+        myIcon.setAttribute('alt', myList[i].weather[0].description);
+        myIcon.setAttribute('title', myList[i].weather[0].description);
         myIcon.style.width = '70px';
         myIcon.src = iconPath;
 

@@ -36,6 +36,26 @@
         justify-content: space-between;
     }
 
+    .content-box .towns{
+        max-width: 72em;
+    }
+
+    .towns section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .towns section img{
+        grid-row: 1/6;
+    }
+
+    section:nth-child(odd) img{
+        grid-column: 2/3;
+    }
+
+    .towns section h2{
+        font-size: 1.4rem;
+    }
+
     .content-box .content-box-article p{
         flex: 1 100%;
     }

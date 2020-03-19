@@ -3,9 +3,6 @@ const urlAPI = '//api.openweathermap.org/data/2.5/weather?id=5604473&APPID=76579
 fetch(urlAPI)
   .then((response) => response.json())
   .then((myJsonInfo) => {
-
-    console.log(myJsonInfo);
-
     let currentWeather = document.querySelector('#current-weather');
     const t = document.querySelector('#high-temperature');
     let humidity = document.querySelector('#humidity');
@@ -17,7 +14,6 @@ fetch(urlAPI)
     currentWeather.innerHTML = myJsonInfo.weather[0].main;
     humidity.innerHTML = myJsonInfo.main.humidity;
     
-    /* let pw = Math.pow(s, 0.16) */;
     let f = 35.74 + (0.6215*t.innerHTML) - 35.75*Math.pow(s.innerHTML, 0.16) + (0.4275*t.innerHTML*Math.pow(s.innerHTML, 0.16));
     
     if(s.innerHTML > 3 && t.innerHTML <= 50){
@@ -43,7 +39,7 @@ const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=7657
 fetch(apiURL)
   .then((response) => response.json())
   .then((myJsInfo) => {
-
+    console.log(myJsInfo);
     let myList = myJsInfo.list;
     let forecastDayNumber = todayNumber;
     for(let i = 0; i<myList.length; i++){
@@ -63,6 +59,8 @@ fetch(apiURL)
         let iconCode = myJsInfo.list[i].weather[0].icon;
         let iconPath = `//openweathermap.org/img/w/${iconCode}.png`;
         let myIcon = document.createElement('img');
+        myIcon.setAttribute('alt', myList[i].weather[0].description);
+        myIcon.setAttribute('title', myList[i].weather[0].description);
         myIcon.style.width = '70px';
         myIcon.src = iconPath;
 
